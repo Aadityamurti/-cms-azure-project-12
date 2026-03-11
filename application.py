@@ -44,7 +44,7 @@ def login():
 
     auth_url = msal_app.get_authorization_request_url(
         scopes=SCOPE,
-        redirect_uri=request.url_root + "getAToken"
+        redirect_uri="https://udacitycmsaditya-g5ejetc0d0g6duca.eastus-01.azurewebsites.net/getAToken"
     )
 
     return redirect(auth_url)
@@ -63,5 +63,6 @@ def testlogs():
 
 if __name__ == "__main__":
     app.run()
+
 
 
