@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jashan Article CMS</title>
+</head>
+
+<body>
+
+<h1>Article CMS</h1>
+
+<form action="/create" method="post">
+Title:<br>
+<input name="title"><br><br>
+
+Author:<br>
+<input name="author"><br><br>
+
+Body:<br>
+<textarea name="body"></textarea><br><br>
+
+<button type="submit">Create</button>
+</form>
+
+<hr>
+
+<h2>Articles</h2>
+
+{% for article in articles %}
+<h3>{{ article.title }}</h3>
+<b>{{ article.author }}</b>
+<p>{{ article.body }}</p>
+<hr>
+{% endfor %}
+
+</body>
+</html>
