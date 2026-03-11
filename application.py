@@ -10,8 +10,8 @@ logging.basicConfig(level=logging.INFO)
 articles = []
 
 # Azure Entra ID configuration
-CLIENT_ID = "YOUR_CLIENT_ID"
-CLIENT_SECRET = "YOUR_CLIENT_SECRET"
+CLIENT_ID = "3e0db69d-a67e-454a-bd98-b2325b612df8"
+CLIENT_SECRET = "225c02fc-43dd-455a-b5ca-74bc6e13c427"
 AUTHORITY = "https://login.microsoftonline.com/common"
 SCOPE = ["User.Read"]
 
@@ -63,3 +63,4 @@ def testlogs():
 
 if __name__ == "__main__":
     app.run()
+
